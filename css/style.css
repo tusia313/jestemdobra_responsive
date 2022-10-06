@@ -1,0 +1,79 @@
+body
+{
+    font-family: 'Libre Bodoni', serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* max-width: 960px; */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: whitesmoke;
+}
+/* .container
+{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+} */
+#heading
+{
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+#logo
+{
+    background-image: url("img/logo.png");
+    background-size: cover;
+    background-color: whitesmoke;
+
+    padding: 1rem 3.5rem 10rem 10rem;
+}
+li
+{
+    display: inline-flex;
+    
+    font-size: 0.7rem;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+
+    cursor: grab;
+
+    padding: 3rem 3rem 0 0;
+    /* font-weight: 700; */
+}
+.welcome
+{
+    color: aliceblue;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: left;
+
+    padding: 10rem 2rem 10rem 2rem;
+    background-image: url("img/cake1.JPG");
+    background-color: blanchedalmond;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+.cakes
+{
+    padding: 5rem 5rem 5rem 5rem;
+    text-align: center;
+    justify-content: center;
+	align-items: center;
+}
+footer
+{
+    padding: 1rem 5rem 1rem 5rem;
+
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 0.7rem;
+}
