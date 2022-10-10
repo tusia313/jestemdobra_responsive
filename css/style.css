@@ -27,52 +27,65 @@ body {
 
 }
 
-#heading {
-    padding: 5px;
+.icons_list {
 
     display: flex;
-    justify-content: center;
-    /* align-items: center; */
+    gap: 1rem;
+    padding: 0.5rem 6rem 0.5rem 6rem;
 
 }
+.icons_list > *{
+    /* wyśrdokowanie diva */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-#logo {
-    background-image: url("img/logo.PNG");
-    background-size: cover;
-    background-color: mediumaquamarine;
+    flex: 1; 
+}
+.left_list {
+    justify-content: flex-start;
+    gap: 0.3rem;
+}
+.right_list {
+    justify-content: flex-end;
+}
 
-    padding: 2rem;
+#logo img{
+    max-height: 7rem;
+    max-width: 7gitrem;
 }
 
 .nav_list {
+    /* typowe dla listy */
     display: flex;
-    gap: 2rem;
+    flex-wrap: wrap;
+    /* gap: SUPER, bo daje nam odległości dla felxa */
+    gap: 4rem;
+    /* Czy można to wycentrować inaczej? */
     justify-content: center;
-	align-items: center;
-
+    
     margin: 0;
-    padding: 0;
+    padding: 0 0 0.5rem 0;
     list-style: none;
+       
 }
-
+/* ta gwizdka to selektor dla wszystkich dzieci nav_list */
 .nav_list > * {
 
-    /* flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0; */
-    font-size: 0.7rem;
-    list-style: none;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-
-    cursor: grab;
-
-    padding: 0 3rem 0 0;
+   /* właściwości flexa dla jego dzieci, niezalecane do nawigacji akurat */
+   /* flex-grow: 1;
+   flex-basis: 1; */
 }
 
 .nav_list li a {
-
-    background-color: orange;
+    
+    color: initial;
+    text-decoration: none;
+    font-size: 0.8rem;
+    /* Ależ to jest przydatna opcja! */
+    font-weight:lighter; 
+    font-family: 'Montserrat', sans-serif;
+  
 }
 
 .welcome {
