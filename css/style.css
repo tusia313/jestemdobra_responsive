@@ -1,14 +1,10 @@
-body
-{
+body {
     font-family: 'Libre Bodoni', serif;
     /* font-family: 'Montserrat', sans-serif; */
-    /* max-width: 960px; */
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    margin: 0 auto 0 auto;
     background-color: whitesmoke;
 }
+
 /* .container
 {
     max-width: 960px;
@@ -17,28 +13,53 @@ body
     padding-left: 1rem;
     padding-right: 1rem;
 } */
-#heading
-{
-    padding: 50px;
+.catering {
+    padding: 0.5rem;
+    text-align: center;
+    background-color: lightblue;
+
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+
+}
+
+#heading {
+    padding: 5px;
 
     display: flex;
-    flex-direction: column;
-	justify-content: center;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+#logo {
+    background-image: url("img/logo.PNG");
+    background-size: cover;
+    background-color: mediumaquamarine;
+
+    padding: 2rem;
+}
+
+.nav_list {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
 	align-items: center;
 
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-#logo
-{
-    background-image: url("img/logo.png");
-    background-size: cover;
-    background-color: whitesmoke;
 
-    padding: 1rem 3.5rem 10rem 10rem;
-}
-li
-{
-    display: inline-flex;
-    
+.nav_list > * {
+
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0; */
     font-size: 0.7rem;
     list-style: none;
     text-transform: uppercase;
@@ -46,34 +67,40 @@ li
 
     cursor: grab;
 
-    padding: 3rem 3rem 0 0;
-    /* font-weight: 700; */
+    padding: 0 3rem 0 0;
 }
-.welcome
-{
+
+.nav_list li a {
+
+    background-color: orange;
+}
+
+.welcome {
     color: aliceblue;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-align: left;
 
-    padding: 10rem 2rem 10rem 2rem;
-    background-image: url("img/cake1.JPG");
+    padding: 5rem 25rem 5rem 6rem;
+    background-image: url("img/background_1.jpg");
     background-color: blanchedalmond;
     background-size: cover;
     /* background-repeat: no-repeat; */
 }
-.cakes
-{
-    padding: 5rem 5rem 5rem 5rem;
-    text-align: center;
-    justify-content: center;
-	align-items: center;
-}
-footer
-{
-    padding: 1rem 5rem 1rem 5rem;
 
-    text-align: center;
-    text-transform: lowercase;
-    font-size: 0.7rem;
+.welcome h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.lighter_letter {
+    line-height: 400%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+footer {
+    padding: 1rem 0 1rem 0;
+    background-color: lightskyblue;
+    border-radius: 2rem;
 }
