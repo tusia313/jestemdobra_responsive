@@ -1,3 +1,6 @@
+:root{
+    --clr-neon: hsl(203, 90%, 74%);
+}
 body {
     font-family: 'Libre Bodoni', serif;
     /* font-family: 'Montserrat', sans-serif; */
@@ -16,7 +19,7 @@ body {
 .catering {
     padding: 0.5rem;
     text-align: center;
-    background-color: lightblue;
+    background-color: hsl(195, 53%, 79%);
 
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -52,7 +55,7 @@ body {
 
 #logo img{
     max-height: 7rem;
-    max-width: 7gitrem;
+    max-width: 7rem;
 }
 
 .nav_list {
@@ -94,11 +97,11 @@ body {
     font-weight: 700;
     text-align: left;
 
-    padding: 5rem 25rem 5rem 6rem;
-    background-image: url("img/background_1.jpg");
+    padding: 5rem 25rem 5rem 9rem;
+    background-image: url('../img/background_1.jpg');
     background-color: blanchedalmond;
-    background-size: cover;
-    /* background-repeat: no-repeat; */
+    background-size: cover; 
+    background-repeat: no-repeat;
 }
 
 .welcome h1 {
@@ -107,13 +110,45 @@ body {
 }
 
 .lighter_letter {
-    line-height: 400%;
+    line-height: 300%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    font-size: 1rem;
+}
+.button
+{
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--clr-neon);
+    background-color: white;
+    /* border: var(--clr-neon) 0.125em solid; */
+
+    margin-left: 4em;
+    padding: 1em 2em;
+    border-radius: 1.1em;
+
+    text-shadow: ;
+}
+.cakes
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;   
+}
+.cake{
+    flex: 1rem;
+    max-height: 20rem;
+    max-width: 20rem;
 }
 
 footer {
     padding: 1rem 0 1rem 0;
-    background-color: lightskyblue;
+    background-color: hsl(203, 92%, 75%);
     border-radius: 2rem;
 }
