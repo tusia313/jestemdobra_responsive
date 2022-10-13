@@ -1,27 +1,21 @@
-:root{
+:root {
     --clr-neon: hsl(203, 90%, 74%);
 }
+
 body {
-    font-family: 'Libre Bodoni', serif;
-    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Libre Bodoni', serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    text-align: center;
     margin: 0 auto 0 auto;
-    background-color: whitesmoke;
+    background-color: hsl(0, 0%, 96%);
+    
 }
 
-/* .container
-{
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-} */
 .catering {
     padding: 0.5rem;
-    text-align: center;
-    background-color: hsl(195, 53%, 79%);
+    background-color: hsl(195 53% 79%);
 
-    font-family: 'Montserrat', sans-serif;
     color: white;
     font-size: 0.8rem;
     font-weight: 700;
@@ -37,23 +31,26 @@ body {
     padding: 0.5rem 6rem 0.5rem 6rem;
 
 }
-.icons_list > *{
+
+.icons_list>* {
     /* wyśrdokowanie diva */
     display: flex;
     justify-content: center;
     align-items: center;
 
-    flex: 1; 
+    flex: 1;
 }
+
 .left_list {
     justify-content: flex-start;
     gap: 0.3rem;
 }
+
 .right_list {
     justify-content: flex-end;
 }
 
-#logo img{
+#logo img {
     max-height: 7rem;
     max-width: 7rem;
 }
@@ -66,33 +63,22 @@ body {
     gap: 4rem;
     /* Czy można to wycentrować inaczej? */
     justify-content: center;
-    
+
     margin: 0;
     padding: 0 0 0.5rem 0;
     list-style: none;
-       
-}
-/* ta gwizdka to selektor dla wszystkich dzieci nav_list */
-.nav_list > * {
 
-   /* właściwości flexa dla jego dzieci, niezalecane do nawigacji akurat */
-   /* flex-grow: 1;
-   flex-basis: 1; */
 }
 
 .nav_list li a {
-    
+
     color: initial;
     text-decoration: none;
     font-size: 0.8rem;
-    /* Ależ to jest przydatna opcja! */
-    font-weight:lighter; 
-    font-family: 'Montserrat', sans-serif;
-  
 }
 
 .welcome {
-    color: aliceblue;
+    color: hsl(250 100% 98%);
     font-size: 1.5rem;
     font-weight: 700;
     text-align: left;
@@ -100,25 +86,25 @@ body {
     padding: 5rem 25rem 5rem 9rem;
     background-image: url('../img/background_1.jpg');
     background-color: blanchedalmond;
-    background-size: cover; 
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
-.welcome h1 {
+h1,
+h2{
+    font-family: 'Libre Bodoni', serif;
     font-size: 4rem;
     font-weight: 700;
 }
 
 .lighter_letter {
     line-height: 300%;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 1rem;
 }
-.button
-{
-    font-size: 0.8rem;
-    font-family: 'Montserrat', sans-serif;
+
+.button {
+    font-size: 1.2rem;
     font-weight: 300;
 
     display: inline-block;
@@ -128,27 +114,63 @@ body {
     background-color: white;
     /* border: var(--clr-neon) 0.125em solid; */
 
-    margin-left: 4em;
+    /* margin-left: 1em; */
     padding: 1em 2em;
     border-radius: 1.1em;
-
-    text-shadow: ;
 }
-.cakes
-{
+
+.cakes {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 3rem;   
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 3rem 0 6rem;
+
+    background-color: hsl(30, 0%, 96%);
 }
-.cake{
-    flex: 1rem;
+h2, p{
+    
+    line-height: 1rem;
+    font-family: inherit;
+    font-weight: inherit;
+    
+}
+.cake {
+    flex: 1;
     max-height: 20rem;
     max-width: 20rem;
+    border-radius: 2rem;
 }
+/* tutorial neonowy */
+.neon {
+    padding-top: 3rem;
+}
+.quotes{
+    padding: 7rem 5rem 7rem 5rem;
 
+    background-image: url('../img/background_2.jpg');
+    background-size: cover;
+    border-radius: 2rem;
+
+    color:white;
+}
+.signature{
+    position: relative;
+    top: -2rem;
+    font-size: 1.5rem;
+    font-family: 'Libre Bodoni', serif;
+    letter-spacing: 0.3rem;
+}
+.birthday{
+    display: flex;
+    padding: 10rem 0 10rem;
+}
+.birthday img{
+    max-width: 10em;
+    min-height: 10rem;
+}
 footer {
     padding: 1rem 0 1rem 0;
-    background-color: hsl(203, 92%, 75%);
-    border-radius: 2rem;
+    background-color: hsl(203 92% 75%);
+    border-radius: 3rem;
 }
