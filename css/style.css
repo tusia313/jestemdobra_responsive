@@ -1,5 +1,14 @@
 :root {
-    --clr-neon: hsl(203, 90%, 74%);
+    --text: hsl(100 0% 1% / 0.5);
+    --text-secondary: hsl(250 100% 98%);
+    --text-shadow: hsl(0 0% 100% / 0.5);
+    --background-site: hsl(0 0% 97% / 0.5);
+    --background-catering: hsl(195 53% 79%);
+    --background-image: hsl(36 100% 90%);
+    --background-cakes: hsl(30, 0%, 96%);
+    --background-birthday: hsl(16 100% 70% / 0.5);
+    --background-footer: hsl(203 92% 75%);
+    --clr-neon: hsl(203 100% 54%);
 }
 
 body {
@@ -7,16 +16,18 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     text-align: center;
+
     margin: 0 auto 0 auto;
-    background-color: hsl(0, 0%, 96%);
-    
+
+    background-color: var(--background-cakes);
+    color: var(--text);
 }
 
 .catering {
     padding: 0.5rem;
-    background-color: hsl(195 53% 79%);
 
-    color: white;
+    background-color: var(--background-catering);
+
     font-size: 0.8rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -51,8 +62,18 @@ body {
 }
 
 #logo img {
-    max-height: 7rem;
-    max-width: 7rem;
+    max-height: 5rem;
+    max-width: 5rem;
+}
+
+#nav_sticky {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    /* JS i tło dopasowane do przechodzenia w poszczególne sekcje strony, ale to zobaczymy */
+    background-color: var(--background-site);
 }
 
 .nav_list {
@@ -61,37 +82,38 @@ body {
     flex-wrap: wrap;
     /* gap: SUPER, bo daje nam odległości dla felxa */
     gap: 4rem;
+
     /* Czy można to wycentrować inaczej? */
     justify-content: center;
-
     margin: 0;
     padding: 0 0 0.5rem 0;
-    list-style: none;
-
 }
 
-.nav_list li a {
+ul{
+    list-style: none;
+}
 
+li a {
     color: initial;
     text-decoration: none;
     font-size: 0.8rem;
 }
 
 .welcome {
-    color: hsl(250 100% 98%);
+    color: var(--text-secondary);
     font-size: 1.5rem;
     font-weight: 700;
     text-align: left;
 
     padding: 5rem 25rem 5rem 9rem;
     background-image: url('../img/background_1.jpg');
-    background-color: blanchedalmond;
+    background-color: var(--background-image);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 h1,
-h2{
+h2 {
     font-family: 'Libre Bodoni', serif;
     font-size: 4rem;
     font-weight: 700;
@@ -111,12 +133,24 @@ h2{
     cursor: pointer;
     text-decoration: none;
     color: var(--clr-neon);
-    background-color: white;
+    background-color: var(--text-secondary);
     /* border: var(--clr-neon) 0.125em solid; */
 
     /* margin-left: 1em; */
     padding: 1em 2em;
     border-radius: 1.1em;
+}
+
+.neon {
+    padding-top: 3rem;
+
+    color: var(--clr-neon);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+
+    /* do dopracowania w wolnym czasie */
+    text-shadow: 0 0 2em var(--text-shadow),
+        0 0 0.1em currentColor;
 }
 
 .cakes {
@@ -126,51 +160,96 @@ h2{
     flex-wrap: wrap;
     padding: 3rem 0 6rem;
 
-    background-color: hsl(30, 0%, 96%);
-}
-h2, p{
-    
+    /* background-color: var(--background-cakes); */
+
     line-height: 1rem;
     font-family: inherit;
     font-weight: inherit;
-    
 }
+
 .cake {
     flex: 1;
     max-height: 20rem;
     max-width: 20rem;
     border-radius: 2rem;
 }
-/* tutorial neonowy */
-.neon {
-    padding-top: 3rem;
-}
-.quotes{
+
+.quotes {
     padding: 7rem 5rem 7rem 5rem;
 
     background-image: url('../img/background_2.jpg');
     background-size: cover;
     border-radius: 2rem;
 
-    color:white;
+    color: var(--text-secondary);
 }
-.signature{
+
+.signature {
     position: relative;
     top: -2rem;
     font-size: 1.5rem;
     font-family: 'Libre Bodoni', serif;
     letter-spacing: 0.3rem;
 }
-.birthday{
+
+.birthday {
     display: flex;
-    padding: 10rem 0 10rem;
+    /* height: auto; */
+    padding: 5rem 2rem 5rem 2rem;
+    margin: 2rem 0 2rem;
+
+    background-color: hsl(16 100% 70% / 0.5);
+
+    font-size: 2rem;
+    line-height: 2rem;
+    border-radius: 2rem;
 }
-.birthday img{
-    max-width: 10em;
-    min-height: 10rem;
+
+.birthday>* {
+    flex: 1;
+}
+
+.birthday_text {
+    padding: 6rem 6rem 6rem 10rem;
+    text-align: left;
+}
+
+.birthday_foto {
+
+    background-image: url('../img/birthday_1.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.subscribe{
+    
 }
 footer {
-    padding: 1rem 0 1rem 0;
-    background-color: hsl(203 92% 75%);
-    border-radius: 3rem;
+    display: flex;
+    margin: 1.5rem;
+    padding: 1rem;
+    background-color: var(--background-footer);
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    text-align: left;
+
+}
+.end
+{
+    flex: 1; 
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 3rem;
+}
+.icon{
+    font-size: 2rem;
+    color: var(--text-secondary);
+    background-color: var(--clr-neon);
+    border-radius: 50%;
+    padding: 0.5rem;
 }

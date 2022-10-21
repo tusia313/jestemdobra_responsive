@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>🎂 jestemdobra sklep</title>
 
     <link rel="stylesheet" href="css/style.css" />
@@ -20,7 +21,7 @@
     <aside>
         <div class="catering">Zamów słodki catering 🎈</div>
     </aside>
-    <nav>
+    <nav id="nav_sticky">
         <div class="icons_list">
             <div class="left_list">
                 <div class="search"><i class="icon-search"></i></div>
@@ -45,18 +46,17 @@
         <div class="welcome">
             <h1>Witaj w mojej cukierni ♡</h1>
             <p>Choć wciąż online, to pracuje i nad tym.</br> <span class="lighter_letter">Darmowa dostawa przy
-                zamówieniu
-                powyżej 200 zł.</span></p>
-            <a href="#" class="button">Biere!</a>
-            <!-- Przycisk: "Zamawiam" -->
+                    zamówieniu
+                    powyżej 200 zł.</span></p>
+            <a href="#" class="button">Zamawiam!</a>
 
         </div>
     </header>
     <section>
 
         <header>
-            <h2 class="neon">WYPIEKI</h2>
-            <p> Do wyboru są zarówno cięzki, polski serniki, jak i pyszne owocowe biszkopty</p>
+            <h2 class="neon">WYPIEKI SŁODKIE</h2>
+            <p> Ciężkie, polski serniki, jak i pyszne, owocowe biszkopty. Nieskormnie powiem: dużo tu tego.</p>
         </header>
         <div class="cakes">
             <a href="#"><img class="cake" src="img/cake_5.jpg" alt="Babeczka"></a>
@@ -66,6 +66,7 @@
     </section>
     <section>
         <div class="quotes">
+            <!-- Tutaj będzie JS i przewracanie cytatów -->
             <blockquote>
                 <h1>"Kucharz liczący kalorię jest jak prostytutka patrząca na zegarek."</h1>
             </blockquote>
@@ -74,25 +75,65 @@
     </section>
     <section>
         <div class="birthday">
-            <p>Chcesz zrobic urodizny dla swojej pociechy? Męża? Teściowej? Pomożemy!</p>
-            <img src="/img/birthday_1.jpg" alt="Tort">
+            <!-- Tutaj też bym dała jakąś animacje palących się świeczek czy coś -->
+            <div class="birthday_text">
+                ☆<p>Wybór tortu na urodziny to </br><strong> z a w s z e </strong></br> problem. Proponuję zdać się
+                    opatrzności i wylosować jeden z naszych przepisów. Gotowy na przygodę? </br></p>☆
+                <!-- Tutaj w JS losowe wybieranie przepisów, dojdę kiedyś do tego :D -->
+            </div>
+            <div class="birthday_foto">
+                <!-- <img src="img/birthday_1.jpg" alt="Tort"> -->
+            </div>
         </div>
     </section>
-    <section>
+    <!-- <section>
         <div class="recepies">
 
         </div>
     </section>
     <section>
         <div class="me">Say hello to me!</div>
-    </section>
+    </section> -->
     <section>
         <div class="eco"></div>
     </section>
     <section>
-        <div class="subscribe"></div>
+        <div class="subscribe">
+            
+        </div>
     </section>
-    <footer></footer>
+    <footer>
+        <ul class="end"><b>Sklep</b>
+            <li>Subskrybuj</li>
+            <li>Catering</li>
+            <li>Akcesoria</li>
+            <li>Zestawy</li>
+        </ul>
+        <ul class="end"><b>jestemdobra</b>
+            <li>O mnie</li>
+            <li>Przepisy</li>
+            <li>Partnerzy</li>
+            <li>Inspiracje</li>
+        </ul>
+        <ul class="end"><b>Użytkownik</b>
+            <li>Utwórz konto</li>
+            <li>Zaloguj się</li>
+            <li>Akcesoria</li>
+            <li>Zestawy</li>
+        </ul>
+        <ul class="end"><b>Pomoc</b>
+            <li>FAQs</li>
+            <li>Kontakt</li>
+            <li>Wysyłka</li>
+            <li>Zwrot i reklamacja</li>
+        </ul>
+        <div class="socials">
+            <div class="icon"><i class="icon-facebook"></i></div>
+            <div class="icon"><i class="icon-instagram"></i></div>
+            <div class="icon"><i class="icon-twitter"></i></div>
+        </div>
+
+    </footer>
 
 </body>
 
