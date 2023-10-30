@@ -193,20 +193,18 @@ h2 {
     letter-spacing: 0.3rem;
 }
 
-.birthday {
+#birthday {
     display: flex;
     /* height: auto; */
     padding: 5rem 2rem 5rem 2rem;
     margin: 2rem 0 2rem;
-
-    background-color: hsl(16 100% 70% / 0.5);
-
+    background-color: var(--background-image);
     font-size: 2rem;
     line-height: 2rem;
     border-radius: 2rem;
 }
 
-.birthday>* {
+#birthday>* {
     flex: 1;
 }
 
@@ -217,23 +215,17 @@ h2 {
 
 .birthday_foto {
 
-    background-image: url('../img/birthday_1.jpg');
+    background-image: url('../img/birthday_2.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 1rem;
-}
-
-.subscribe{
-    padding: var(--padding-div);
-    background-color: var(--background-image);
-    border-radius: 2rem;   
 }
 .ending {
     display: flex;
     padding: var(--padding-div);
     margin: 2rem;
 
-    background-color: var(--background-footer);
+    background-color: var(--background-catering);
     border-radius: 2rem;
     
     font-size: 0.8rem;
