@@ -37,14 +37,15 @@ aside .info-stripe {
     display: flex;
     align-items: center;
     overflow: hidden;
-    width: 20rem;
-    height: 1.5rem;
+    width: 10rem;
+    height: 2rem;
     scroll-behavior: smooth;
-    border: 2px magenta solid;
+    border: 3px solid blue;
 }
 
-aside .info-stripe < p {
-    width: 100%; 
+p {
+    text-wrap: nowrap;
+    padding: 0 2rem;
 }
 
 aside .catering-stripe {
