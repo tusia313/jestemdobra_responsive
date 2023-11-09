@@ -1,39 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&family=Montserrat:wght@200;400;700&display=swap');
+
 :root {
-    --text: hsl(100 0% 1% / 0.5);
-    --text-secondary: hsl(250 100% 98%);
-    --text-shadow: hsl(0 0% 100% / 0.5);
-    --background-site: hsl(0 0% 97% / 0.5);
-    --background-catering: hsl(195 53% 79%);
-    --background-image: hsl(36 100% 90%);
-    --background-cakes: hsl(30, 0%, 96%);
-    --background-birthday: hsl(16 100% 70% / 0.5);
-    --background-footer: hsl(203 92% 75%);
-    --clr-neon: hsl(203 100% 54%);
-    --padding-div: 5rem 2rem 5rem 2rem;
+    --text: rgba(3, 3, 3, 0.5);
+    --text-secondary: rgb(247, 245, 255);
+    --text-shadow: rgba(255, 255, 255, 0.5);
+    --background-site: rgba(247, 247, 247, 0.5);
+    --background-catering: rgb(173, 216, 230);
+    --background-image: rgb(255, 235, 204);
+    --background-cakes: rgb(245, 245, 245);
+    --background-birthday: rgba(255, 143, 102, 0.5);
+    --background-footer: rgb(133, 205, 250);
+    --clr-neon: rgb(20, 165, 255);
+    --padding-div: 5rem 2rem;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     /* font-family: 'Libre Bodoni', serif; */
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     text-align: center;
-
-    margin: 0 auto 0 auto;
-
     background-color: var(--background-cakes);
     color: var(--text);
 }
 
-.catering {
-    padding: 0.5rem;
-
-    background-color: var(--background-catering);
-
+aside {
     font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside .info-stripe {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 20rem;
+    height: 1.5rem;
+    scroll-behavior: smooth;
+    border: 2px magenta solid;
+}
+
+aside .info-stripe < p {
+    width: 100%; 
+}
+
+aside .catering-stripe {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--background-catering);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-
 }
 
 .icons_list {
