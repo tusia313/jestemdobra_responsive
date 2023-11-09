@@ -37,13 +37,12 @@ aside .info-stripe {
     display: flex;
     align-items: center;
     overflow: hidden;
-    width: 10rem;
+    width: 14rem;
     height: 2rem;
     scroll-behavior: smooth;
-    border: 3px solid blue;
 }
 
-p {
+aside .info-stripe p {
     text-wrap: nowrap;
     padding: 0 2rem;
 }
