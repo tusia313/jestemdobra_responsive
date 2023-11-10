@@ -23,6 +23,7 @@ body {
     background-color: var(--background-cakes);
     color: var(--text);
 }
+   
 
 h1,
 h2 {
@@ -35,7 +36,6 @@ aside {
     font-size: 0.8rem;
 }
 
-
 aside .info-stripe {
     display: inline-flex;
     overflow: hidden;
@@ -44,7 +44,6 @@ aside .info-stripe {
 }
 
 aside .info-stripe p {
-    
     text-wrap: nowrap;
     padding: 0 2rem;
 }
@@ -79,9 +78,12 @@ nav .nav-container .icon-container {
     gap: 2rem;
 }
 
-nav .nav-container #logo img {
+nav .nav-container .logo {
     height: 5rem;
     width: 5rem;
+}
+nav .nav-container .logo img {
+    width: 100%;
 }
 
 nav .nav-list {
@@ -100,12 +102,17 @@ nav .nav-list li a {
     letter-spacing: 0.1em;
 }
 
-@media screen and (max-width: 400px) {
-    nav {
-        background-color: yellowgreen !important;
+@media screen and (max-width: 480px) {
+  
+    nav .nav-container {
+        justify-content: space-between;
+        /* gap: 2.5rem; */
     }
     nav .nav-list {
-        gap:2rem;
+        gap: 1.5rem;
+    }
+    body {
+        width: 100%;
     }
 }
 
