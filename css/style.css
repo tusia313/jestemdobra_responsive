@@ -33,22 +33,18 @@ h2 {
 
 aside {
     font-size: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
+
 aside .info-stripe {
-    display: flex;
-    align-items: center;
+    display: inline-flex;
     overflow: hidden;
-    width: 14rem;
-    height: 2rem;
+    width: 12rem;
     scroll-behavior: smooth;
 }
 
 aside .info-stripe p {
+    
     text-wrap: nowrap;
     padding: 0 2rem;
 }
@@ -88,7 +84,7 @@ nav .nav-container #logo img {
     width: 5rem;
 }
 
-.nav-list {
+nav .nav-list {
     display: flex;
     justify-content: center;
     /* gap: SUPER, bo daje nam odległości dla felxa */
@@ -96,11 +92,21 @@ nav .nav-container #logo img {
     list-style: none;
 }
 
-.nav-list li a {
+nav .nav-list li a {
     list-style: none;
     text-decoration: none;
     color: var(--text);
-    font-size: 0.8em;
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 400px) {
+    nav {
+        background-color: yellowgreen !important;
+    }
+    nav .nav-list {
+        gap:2rem;
+    }
 }
 
 .welcome {
