@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&family=Montserrat:wght@200;400;700&display=swap');
 
 :root {
-    --text: rgba(3, 3, 3, 0.5);
+    --text: rgba(3, 3, 3, 0.6);
     --text-secondary: rgb(247, 245, 255);
     --text-shadow: rgba(255, 255, 255, 0.5);
     --background-site: rgba(247, 247, 247, 0.5);
@@ -19,10 +19,16 @@ body {
     padding: 0;
     /* font-family: 'Libre Bodoni', serif; */
     font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
     text-align: center;
     background-color: var(--background-cakes);
     color: var(--text);
+}
+
+h1,
+h2 {
+    font-family: 'Libre Bodoni', serif;
+    font-size: 4rem;
+    font-weight: 700;
 }
 
 aside {
@@ -56,68 +62,45 @@ aside .catering-stripe {
     letter-spacing: 0.2rem;
 }
 
-.icons_list {
-
-    display: flex;
-    gap: 1rem;
-    padding: 0.5rem 6rem 0.5rem 6rem;
-
-}
-
-.icons_list>* {
-    /* wyśrdokowanie diva */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    flex: 1;
-}
-
-.left_list {
-    justify-content: flex-start;
-    gap: 0.3rem;
-}
-
-.right_list {
-    justify-content: flex-end;
-}
-
-#logo img {
-    max-height: 5rem;
-    max-width: 5rem;
-}
-
-#nav_sticky {
+nav {
     position: sticky;
     top: 0;
     right: 0;
-    left: 0;
-    z-index: 999;
+    z-index: 1;
     /* JS i tło dopasowane do przechodzenia w poszczególne sekcje strony, ale to zobaczymy */
     background-color: var(--background-site);
 }
 
-.nav_list {
-    /* typowe dla listy */
+nav .nav-container {
     display: flex;
-    flex-wrap: wrap;
-    /* gap: SUPER, bo daje nam odległości dla felxa */
-    gap: 4rem;
-
-    /* Czy można to wycentrować inaczej? */
-    justify-content: center;
-    margin: 0;
-    padding: 0 0 0.5rem 0;
+    justify-content: space-around;
+    padding: 0.5rem;
 }
 
-ul{
+nav .nav-container .icon-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav .nav-container #logo img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    /* gap: SUPER, bo daje nam odległości dla felxa */
+    gap: 4rem;
     list-style: none;
 }
 
-li a {
-    color: initial;
+.nav-list li a {
+    list-style: none;
     text-decoration: none;
-    font-size: 0.8rem;
+    color: var(--text);
+    font-size: 0.8em;
 }
 
 .welcome {
@@ -131,13 +114,6 @@ li a {
     background-color: var(--background-image);
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-h1,
-h2 {
-    font-family: 'Libre Bodoni', serif;
-    font-size: 4rem;
-    font-weight: 700;
 }
 
 .lighter_letter {
