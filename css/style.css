@@ -37,9 +37,10 @@ aside {
 }
 
 aside .info-stripe {
+    width: 12rem;
     display: inline-flex;
     overflow: hidden;
-    width: 12rem;
+    background-color: var(--background-cakes);
     scroll-behavior: smooth;
 }
 
@@ -49,7 +50,7 @@ aside .info-stripe p {
 }
 
 aside .catering-stripe {
-    width: 100%;
+    /* width: 100%; */
     padding: 0.5rem;
     background-color: var(--background-catering);
     font-weight: 700;
@@ -76,6 +77,7 @@ nav .nav-container .icon-container {
     display: flex;
     align-items: center;
     gap: 2rem;
+    /* tutaj jak będą ikonki to dać space-around */
 }
 
 nav .nav-container .logo {
@@ -88,9 +90,9 @@ nav .nav-container .logo img {
 
 nav .nav-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     /* gap: SUPER, bo daje nam odległości dla felxa */
-    gap: 4rem;
+    /* gap: 4rem; */
     list-style: none;
 }
 
@@ -106,13 +108,9 @@ nav .nav-list li a {
   
     nav .nav-container {
         justify-content: space-between;
-        /* gap: 2.5rem; */
     }
     nav .nav-list {
-        gap: 1.5rem;
-    }
-    body {
-        width: 100%;
+        padding: 0 0.8rem 0 0.8rem;
     }
 }
 
